@@ -10,7 +10,7 @@ document.getElementById('upadated-input').addEventListener('click', function add
     const len = inputUl.childNodes.length+")"+" ";
     const finalLen = len;
     if(inputValue === "" || inputValue === undefined || inputValue === null || inputValue === NaN){
-        console.log('plese input something');
+        document.getElementsByClassName('secound-alert')[0].style.display = 'flex'
     }
     else{
         newList.innerText =finalLen + inputValue;

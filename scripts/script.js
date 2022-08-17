@@ -71,7 +71,7 @@ document
 // ________________________________________________________________________________________________________________________________________
 
 // hide and show button and change the h1 text
-function makeChabges() {
+function makeChanges() {
   document.getElementById("h1").innerText =
     "You Can Change Color By Click On Those Buttons";
   document.getElementById("letsStart").style.display = "none";
@@ -80,13 +80,23 @@ function makeChabges() {
   document.getElementById("p").style.display = "none";
 }
 function makeChanges2() {
-  document.getElementById("h1").innerText =
-    "If you don't like the Background color";
+  document.getElementById("alert").style.display = "block";
+  document.getElementById("h1").innerText = "If you don't like the Background color";
   document.getElementById("letsEnd").style.display = "none";
   document.getElementById("letsStart").style.display = "inline-block";
   document.getElementById("buttons").style.display = "none";
-  alert("Color Changed");
   document.getElementById("p").style.display = "block";
 }
+
+document
+  .getElementById("alert-off")
+  .addEventListener("click", function() {
+    document.getElementById("alert").style.display = "none";
+  });
+document
+  .getElementById("again-off")
+  .addEventListener("click", function() {
+    document.getElementById("sAlart").style.display = "none";
+  });
 
 // ________________________________________________________________________________________________________________________________________
