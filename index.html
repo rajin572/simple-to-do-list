@@ -10,14 +10,41 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body class=" text-white pt-5">
+    <section id="alert" class="container text-center positoning">
+        <div class="card w-75 m-auto">
+            <div class="pb-4">
+              <div class="text-end">
+                <i id="alert-off" class=" point fa-solid fa-square-xmark "></i>
+              </div>
+              <i class="fa-solid fa-circle-check"></i>
+              <h5>Your Color Has Been Changed</h5>
+              <p >You have changed your background color lets enjoy the To Do List</p>
+            </div>
+          </div>
+    </section>
+    <section class="container mb-5 text-center">
+        <h3 id="h1">If you don't like the Background color</h3>
+        <p id="p">You can change it by clicking the button below :</p>
+        <button id="letsStart" class="btn btn-primary m-5 " onclick="makeChanges()">Lets Change</button>
+        <button id="letsEnd" class="btn btn-primary m-5" onclick="makeChanges2()">confirm Change</button>
+        <div style="display: none;" id="buttons">
+            <button class="btn btn-secondary m-1" onclick="document.body.style.backgroundColor = '#343a40'">Make Gray</button>
+            <button class="btn btn-success m-1" onclick="makeSuccess()">Make Green</button>
+            <button class="btn btn-danger m-1" id="warning">Make Red</button>
+            <button class="btn btn-info m-1" id="info">Make Skyblue</button>
+            <button style="background-color: #6f42c1;" class="btn m-1" id="purple">Make Purple</button>
+            <button class="btn btn-light m-1" id="orange">Make White</button>
+            <button style="background-color: #343434; color: white;" class="btn m-1" id="defult">Make Defult</button>
+        </div>
+    </section>
     <section class="container mb-5 text-center">
         <h1 class="m-5">To Do List</h1>
         <p>Enter a task you want to do</p>
         <input type="text" class="w-100 p-2 rounded" id="input-fild">
-        <div id="sAlart" class="secound-alert my-3 px-3 py-1">
+        <div id="sAlart" class="secound-alert rounded mt-3 mb-4 px-3 py-2">
             <i class="exclamation fa-solid fa-circle-exclamation"></i>
             <p>Please Enter some Valid Input</p>
-            <i id="again-off" class="point fa-solid fa-xmark"></i>
+            <i id="again-off" class=" point fa-solid fa-xmark"></i>
         </div>
         <button class="btn btn-primary w-25 mt-3 mb-4" id="upadated-input">update</button>
         <h3 class="text-start">Tasks :</h3>
@@ -27,5 +54,6 @@
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="scripts/toDo.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
