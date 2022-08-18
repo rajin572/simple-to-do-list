@@ -1,10 +1,5 @@
 body{
     background-color: rgb(0, 0, 0);
-    position: relative;
-}
-
-#letsEnd{
-    display: none;
 }
 ul{
     padding-left: 0rem;
@@ -16,18 +11,9 @@ input{
     outline: none;
     border: none;
 }
-.positoning{
-    position: absolute;
-    top : 150px;
-    left: 50%;
-    transform: translate(-50%, 0px);
-    display: none;
-    opacity: 0.9;
-}
-.card{
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    box-shadow: 2px 2px 10px black;
+#inputUlP {
+    background-color: rgb(45, 45, 45);
+    padding: 10px 0px;
 }
 .secound-alert{
     display: flex;
@@ -47,4 +33,7 @@ input{
 }
 .point{
     cursor: pointer;
+}
+.customli{
+    background-color: rgb(18, 18, 18);
 }

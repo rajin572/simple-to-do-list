@@ -3,13 +3,15 @@ document.getElementById('upadated-input').addEventListener('click', function add
     const inputFild = document.getElementById('input-fild');
     const inputValue = inputFild.value;
     const inputUl = document.getElementById('input-ul');
+    const inputUlP = document.getElementById('inputUlP');
+    inputUlP.style.display = 'none';
     const newList = document.createElement('li');
     const newListAtr = document.createAttribute('class');
-    newListAtr.value = 'list text-start m-1 p-2 border-bottom border-3 customli';
+    newListAtr.value = 'list text-start m-1 p-2 customli';
     newList.setAttributeNode(newListAtr)
-    const len = inputUl.childNodes.length+")"+" ";
+    const len = inputUl.children.length+")"+" ";
     const finalLen = len;
-    if(inputValue === "" || inputValue === undefined || inputValue === null || inputValue === NaN){
+    if(inputValue === "" ||inputValue === " " || inputValue === undefined || inputValue === null || inputValue === NaN){
         document.getElementsByClassName('secound-alert')[0].style.display = 'flex'
     }
     else{
@@ -17,4 +19,10 @@ document.getElementById('upadated-input').addEventListener('click', function add
         inputUl.appendChild(newList)
     }
     inputFild.value = '';
+
 })
+document
+  .getElementById("again-off")
+  .addEventListener("click", function() {
+    document.getElementById("sAlart").style.display = "none";
+  });
