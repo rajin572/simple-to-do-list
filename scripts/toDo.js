@@ -5,7 +5,7 @@ document.getElementById('upadated-input').addEventListener('click', function add
     const inputUl = document.getElementById('input-ul');
     const newList = document.createElement('li');
     const newListAtr = document.createAttribute('class');
-    newListAtr.value = 'list text-start m-1 p-2 border-bottom border-2';
+    newListAtr.value = 'list text-start p-2 border-bottom border-2';
     newList.setAttributeNode(newListAtr)
     const len = inputUl.children.length+")"+" ";
     const finalLen = len;
